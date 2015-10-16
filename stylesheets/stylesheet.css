@@ -483,6 +483,10 @@ header h2 {
   margin: 0 auto;
 }
 
+.innerHeader {
+  width: 90% !important;
+}
+
 #content-wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
@@ -532,7 +536,7 @@ header a.button {
   position: absolute;
   top: 0;
   right: 0;
-  background: transparent url(../images/playstoreButton.png) 0 0 no-repeat;
+  background: transparent url(../images/playstoreButton.PNG) 0 0 no-repeat;
 }
 aside a.button {
   display: block;
