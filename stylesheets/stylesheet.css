@@ -451,18 +451,18 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+  background: #F1F1F1 url(../images/banner.png) 0 0 repeat-x;
+  border-bottom: solid 1px #8B8D8F;
 }
 
 header h1 {
-  width: 540px;
+  width: 800px;
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 72px;
   font-weight: normal;
   line-height: 1;
-  color: #fff;
+  color: #003545;
   letter-spacing: -1px;
 }
 
@@ -473,7 +473,7 @@ header h2 {
   font-size: 26px;
   font-weight: normal;
   line-height: 1.3;
-  color: #9ddcff;
+  color: #00456C;
   letter-spacing: 0;
 }
 
@@ -500,6 +500,8 @@ header h2 {
 aside#sidebar {
   float: right;
   width: 200px;
+  position: fixed;
+  right: 1%;
   min-height: 504px;
   padding-left: 20px;
   font-size: 12px;
@@ -512,15 +514,11 @@ aside#sidebar p.repo-owner a {
   font-weight: bold;
 }
 
-#downloads {
-  margin-bottom: 40px;
-}
-
 a.button {
   width: 134px;
   height: 58px;
   padding-top: 22px;
-  padding-left: 68px;
+  padding-left: 17%;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 23px;
   line-height: 1.2;
@@ -534,7 +532,7 @@ header a.button {
   position: absolute;
   top: 0;
   right: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  background: transparent url(../images/playstoreButton.png) 0 0 no-repeat;
 }
 aside a.button {
   display: block;
@@ -774,7 +772,10 @@ footer a:hover {
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) {
+#sidebar{
+  display: none;
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -852,6 +853,7 @@ footer a:hover {
     width: 100% ! important;
   }
   aside#sidebar {
+    display: none;
     min-height: 0;
     padding: 20px 0;
     margin-top: 20px;
@@ -873,9 +875,21 @@ footer a:hover {
   }
 }
 
+#sticky {
+    color: #000;
+    padding-top: 15px;
+    border-radius: 0.5ex;
+}
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
+@media only screen and (max-width: 479px) {}
 
