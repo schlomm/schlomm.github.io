@@ -477,6 +477,21 @@ header h2 {
   letter-spacing: 0;
 }
 
+.transition {
+    -moz-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    padding-right: 50px;
+}
+.screenshotPicture {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+
 .inner {
   position: relative;
   width: 940px;
@@ -497,9 +512,9 @@ header h2 {
   width: 690px;
 }
 
-#main-content img {
+/*#main-content img {
   max-width: 100%;
-}
+}*/
 
 aside#sidebar {
   float: right;
@@ -508,6 +523,7 @@ aside#sidebar {
   right: 1%;
   min-height: 504px;
   padding-left: 20px;
+  padding-right: 200px;
   font-size: 12px;
   line-height: 1.3;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
@@ -896,4 +912,3 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
-
